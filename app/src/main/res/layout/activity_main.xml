@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Available"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold|italic"
+            android:textAllCaps="true"
+            android:id="@+id/textView2"
+            android:layout_margin="15dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp" />
+    <CheckBox
+                android:id="@+id/CAPPACINNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox"
+                android:textColor="#000000"
+                android:padding="@dimen/layout_padding"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/small_text_size"
+                android:layout_below="@+id/textView2"
+                android:layout_alignLeft="@+id/HOT_CHOCOLATE"
+                android:layout_alignStart="@+id/HOT_CHOCOLATE" />
+
+            <CheckBox
+                android:id="@+id/HOT_CHOCOLATE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/HOT_CHOCOLATE"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/small_text_size"
+                android:layout_below="@+id/CAPPACINNO"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2" />
+
+    <CheckBox
+                android:id="@+id/MILO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/MILO"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/small_text_size"
+        android:layout_below="@+id/HOT_CHOCOLATE"
+        android:layout_alignLeft="@+id/HOT_CHOCOLATE"
+        android:layout_alignStart="@+id/HOT_CHOCOLATE" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_summary"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textAllCaps="true"
+                android:id="@+id/textView"
+                android:layout_marginBottom="75dp"
+                android:layout_above="@+id/button2" />
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="#000000"
+                android:background="@drawable/rounded_edittext"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:text="@string/button_text"
+                android:layout_marginBottom="31dp"
+                android:id="@+id/button2"
+                android:layout_above="@+id/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:onClick="reset"
+                android:textColor="#000000"
+                android:background="@drawable/rounded_edittext"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:text="Reset"
+                android:layout_marginBottom="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="13dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="@string/R0"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBaseline="@+id/CAPPACINNO"
+        android:layout_alignBottom="@+id/CAPPACINNO"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/HOT_CHOCOLATE"
+        android:layout_alignBottom="@+id/HOT_CHOCOLATE"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/MILO"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+
+
+
+</RelativeLayout>
